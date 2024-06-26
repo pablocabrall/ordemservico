@@ -1,9 +1,9 @@
 from django.contrib import admin
 from django.urls import path
-from backend.core import views
+from backend.core import views as v
 
 app_name = 'core'
 
 urlpatterns = [
-    path('', views.index, name='index')
+    path('', v.index, name='index')
 ]
